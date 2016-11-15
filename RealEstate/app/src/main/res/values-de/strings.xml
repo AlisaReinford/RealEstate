@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="button_login">Anmeldung</string>
+    <string name="button_signup">Anmelden</string>
+    <string name="button_confirm_login">Bestätigen</string>
+    <string name="button_cancel_login">Stornieren</string>
+    <string name="button_confirm_signup">Bestätigen</string>
+    <string name="button_cancel_signup">Stornieren</string>
+    <string name="confirmation_code">Bestätigungscode</string>
+
+</resources>

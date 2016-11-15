@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "444981359676",
+    "firebase_url": "https://homie-cef91.firebaseio.com",
+    "project_id": "homie-cef91",
+    "storage_bucket": "homie-cef91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444981359676:android:20f3959593232e4f",
+        "android_client_info": {
+          "package_name": "com.mrtvrgn.mvrealestate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444981359676-o6vsfq03i5qib1q5mj6klr4hu7sl5ipe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mrtvrgn.mvrealestate",
+            "certificate_hash": "62C5926B959FEB2B0592DC449727DCA1E5BDC11F"
+          }
+        },
+        {
+          "client_id": "444981359676-d43jioj1l6oaulgd7phjq6htdsah4hbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd2DP2l94b9szGQLpQHBObbmIS-Cqwxpo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444981359676-d43jioj1l6oaulgd7phjq6htdsah4hbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

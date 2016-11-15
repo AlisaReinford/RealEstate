@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <com.mrtvrgn.mvrealestate.utils.MyVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.mrtvrgn.mvrealestate.utils.LoginFormView
+        android:id="@+id/formView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="124dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/button_login"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/button"
+            android:text="@string/button_signup"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homie"
+        android:textSize="64dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"/>
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:loading_width="5dp"
+        app:loading_color="@color/colorOrange500"
+        android:layout_below="@+id/appName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>

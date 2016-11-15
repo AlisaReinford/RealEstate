@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Property Detail Card -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--<com.android.volley.toolbox.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/single_property_image"/>-->
+
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/iv_single_property"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        app:rollviewpager_hint_alpha="0"
+                        app:rollviewpager_hint_color="@color/colorInfo"
+                        app:rollviewpager_hint_gravity="center"
+                        app:rollviewpager_hint_paddingBottom="20dp"
+                        app:rollviewpager_hint_paddingLeft="20dp"
+                        app:rollviewpager_hint_paddingRight="20dp"
+                        app:rollviewpager_hint_paddingTop="20dp"
+                        app:rollviewpager_play_delay="5000" />
+
+                    <!-- Property Detail -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="17dp"
+                            android:id="@+id/text_fsp_property_price"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+                    <!-- Property Detail Constants -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Price"
+                            android:layout_weight="2"/>
+
+                        <TextView
+                            android:id="@+id/text_fsp_property_beds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Beds"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/text_fsp_property_baths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Baths"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/text_fsp_property_cars"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Car Alown."
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--Relevant Person Information and Contact-->
+            <com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/folding_cell"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/cell_content_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="201dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_contact_now"
+                            android:layout_width="match_parent"
+                            android:alpha="0.7"
+                            android:layout_height="50dp"
+                            android:text="Contact Now" />
+
+                        <Button
+                            android:id="@+id/button_send_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:alpha="0.7"
+                            android:text="Send Message" />
+
+                        <!-- Seller/Renter Detail Card -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.android.volley.toolbox.NetworkImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/image_relevant_profile2"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Relevant Person"
+                                        android:textStyle="bold"
+                                        android:textSize="17dp"/>
+
+                                    <TextView
+                                        android:id="@+id/text_relevant_p_name1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Relevant Person Name"
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="17dp"/>
+
+                                    <TextView
+                                        android:id="@+id/text_relevant_p_mobile1"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Relevant Person Phone Number"
+                                        android:textSize="17dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cell_title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@android:color/holo_blue_dark" />
+                    <!-- Seller/Renter Detail Card -->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.android.volley.toolbox.NetworkImageView
+                                android:layout_width="90dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/image_relevant_profile1"/>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Relevant Person"
+                                    android:textStyle="bold"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/text_relevant_p_name2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Relevant Person Name"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="17dp"/>
+
+                                <TextView
+                                    android:id="@+id/text_relevant_p_mobile2"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Relevant Person Phone Number"
+                                    android:textSize="17dp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+            </com.ramotion.foldingcell.FoldingCell>
+
+
+            <!-- Map View -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="55dp"
+                android:layout_height="250dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_fsp_property_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Adress Box"/>
+
+                    <!-- Property Image View -->
+                    <com.google.android.gms.maps.MapView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapView" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.CardView>

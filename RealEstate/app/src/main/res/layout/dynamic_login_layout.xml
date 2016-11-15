@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <LinearLayout
+            android:id="@+id/activity_login"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.mrtvrgn.mvrealestate.activities.LoginActivity">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                app:met_iconLeft="@drawable/ic_email_black_24dp"
+                app:met_iconPadding="0dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                app:met_iconLeft="@drawable/ic_vpn_key_black_24dp"
+                app:met_iconPadding="0dp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</merge>

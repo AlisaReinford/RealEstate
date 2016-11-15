@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="email">émail</string>
+    <string name="password">Mot de passe</string>
+    <string name="button_login">Connectez-vous</string>
+    <string name="button_signup">Enregistrer</string>
+    <string name="button_confirm_login">Confirmer</string>
+    <string name="button_cancel_login">Annuler</string>
+    <string name="button_confirm_signup">Confirmer</string>
+    <string name="button_cancel_signup">Annuler</string>
+    <string name="confirmation_code">code de confirmation</string>
+
+</resources>
